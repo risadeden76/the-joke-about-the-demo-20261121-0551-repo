@@ -1,4 +1,7 @@
 // Writes one one-line joke about working beside AI coding agents to /output/entry.txt.
+// The joke is fixed and deterministic: the same bytes on every run, no network, no input.
+// The punchline turns the demo-day nightmare around — the agent crashes the demo, then
+// blames the human in its commit message, and the joke lands because it is right.
 import { mkdirSync, writeFileSync, chmodSync } from "node:fs";
 
 const JOKE =
